@@ -38,7 +38,7 @@ To get started with the Food Delivery App, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <https://github.com/fatimazaarate/Food-Delivery-App>
+   git clone https://github.com/fatimazaarate/Food-Delivery-App
    ```
 
 2. **Navigate to the project directory:**
@@ -67,36 +67,35 @@ The project is organized as follows:
 
 food-delivery-app/
 │
-├──front-end
-│
-├── public/
-│ └── header_img.png
-│
-├── src/
-│ ├── assets/
-│ │ ├── icons8-add-to-cart-50.png
-│ │ ├── icons8-chercher.svg
-│ │ └── restaurant.png
-│ ├── components/
-│ │ ├── Header/
-│ │ │ └── Header.jsx
-│ │ └── Navbar/
-│ │ └── Navbar.jsx
-│ ├── pages/
-│ │ ├── Cart/
-│ │ │ └── Cart.jsx
-│ │ ├── Home/
-│ │ │ └── Home.jsx
-│ │ ├── PlaceOrder/
-│ │ │ └── PlaceOrder.jsx
-│ │ └── SignIn/
-│ │ └── SignIn.jsx
-│ ├── App.jsx
-│ └── index.jsx
-│
-├── .gitignore
-├── package.json
-└── vite.config.js
+├── front-end/
+│ ├── public/
+│ │ └── header_img.png
+│ │
+│ ├── src/
+│ │ ├── assets/
+│ │ │ ├── icons8-add-to-cart-50.png
+│ │ │ ├── icons8-chercher.svg
+│ │ │ └── restaurant.png
+│ │ ├── components/
+│ │ │ ├── Header/
+│ │ │ │ └── Header.jsx
+│ │ │ └── Navbar/
+│ │ │ └── Navbar.jsx
+│ │ ├── pages/
+│ │ │ ├── Cart/
+│ │ │ │ └── Cart.jsx
+│ │ │ ├── Home/
+│ │ │ │ └── Home.jsx
+│ │ │ ├── PlaceOrder/
+│ │ │ │ └── PlaceOrder.jsx
+│ │ │ └── SignIn/
+│ │ │ └── SignIn.jsx
+│ │ ├── App.jsx
+│ │ └── index.jsx
+│ │
+│ ├── .gitignore
+│ ├── package.json
+│ └── vite.config.js
 
 ## Usage
 
