@@ -1,6 +1,6 @@
 # FoodyNow
 
-A modern, responsive food delivery application built with React. This application allows users to browse menu items, add them to their cart, and place orders seamlessly.
+FoodyNow is a modern, responsive food delivery application built with React. This application allows users to browse menu items, add them to their cart, and place orders seamlessly.
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@ A modern, responsive food delivery application built with React. This applicatio
 - [Folder Structure](#folder-structure)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -38,7 +37,7 @@ To get started with the Food Delivery App, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <https://github.com/fatimazaarate/Food-Delivery-App>
+   git clone `https://github.com/fatimazaarate/Food-Delivery-App`
    ```
 
 2. **Navigate to the project directory:**
@@ -65,6 +64,7 @@ To get started with the Food Delivery App, follow these steps:
 
 The project is organized as follows:
 
+```
 food-delivery-app/
 │
 ├──front-end
@@ -97,6 +97,7 @@ food-delivery-app/
 ├── .gitignore
 ├── package.json
 └── vite.config.js
+```
 
 ## Usage
 
