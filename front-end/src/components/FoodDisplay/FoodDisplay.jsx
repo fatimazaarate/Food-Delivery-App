@@ -1,12 +1,26 @@
 import React, { useContext } from "react";
 import "./FoodDisplay.css";
 import { storeContext } from "../../context/storeContext";
+import FoodItems from "../FoodItems/FoodItems";
 
-const FoodDisplay = () => {
-  const { food_list } = useContext(storeContext);
+const FoodDisplay = (category) => {
+  const { food_List } = useContext(storeContext);
   return (
-    <div>
-      <h1>this is the use of createContext hook in react</h1>
+    <div className="food-display">
+      <h1>Best Dishes Around You</h1>
+      <div className="food-display-list">
+        {food_List.map((item, index) => {
+          return (
+            <FoodItems
+              key={index}
+              id={item.id}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
