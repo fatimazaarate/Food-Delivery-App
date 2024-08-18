@@ -66,14 +66,14 @@
 .plus-icon {
   background-color: #b6fdb6;
   border: none;
-  margin-right: 7px;
+  margin-left: 7px;
   border: 1px solid #a1efa1;
 }
 
 .minus-icon {
   background-color: #f6e0e0;
   border: 1px solid #f1b8b8;
-  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .plus-icon p {

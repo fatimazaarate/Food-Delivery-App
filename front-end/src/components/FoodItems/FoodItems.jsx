@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./FoodItems.css";
 import { assets } from "../../assets/assets";
+import { storeContext } from "../../context/storeContext";
 
 const FoodItems = ({ id, name, price, image }) => {
-  const [count, setCount] = useState(0);
-  const plusCount = () => setCount(count + 1);
-  const minusCount = () => setCount(count - 1);
+  const { cartItems, addToCart, removeFromCart } = useContext(storeContext);
+
   return (
     <div className="food-item">
       <div className="food-item-img">
@@ -19,25 +19,25 @@ const FoodItems = ({ id, name, price, image }) => {
         <div className="price-and-add-button">
           <p className="food-item-price"> {price} </p>
           <div>
-            {!count ? (
-              <button className="add-button" onClick={plusCount}>
+            {!cartItems[id] ? (
+              <button className="add-button" onClick={() => addToCart(id)}>
                 <p>+</p>
               </button>
             ) : (
               <>
                 <div className="count-icons">
                   <button
-                    className="counter-buttons plus-icon"
-                    onClick={plusCount}
-                  >
-                    <p>+</p>
-                  </button>
-                  {count}
-                  <button
                     className="counter-buttons minus-icon"
-                    onClick={minusCount}
+                    onClick={() => removeFromCart(id)}
                   >
                     <p>-</p>
+                  </button>
+                  {cartItems[id]}
+                  <button
+                    className="counter-buttons plus-icon"
+                    onClick={() => addToCart(id)}
+                  >
+                    <p>+</p>
                   </button>
                 </div>
               </>
