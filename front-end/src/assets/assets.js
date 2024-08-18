@@ -298,7 +298,7 @@ export const food_List = [
   },
   {
     id: 31,
-    name: "Green Tea",
+    name: "Moroccan Tea",
     image: drink_3,
     price: 20 + " MAD",
     category: "Drink",

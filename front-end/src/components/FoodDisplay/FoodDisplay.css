@@ -3,8 +3,8 @@
 }
 
 .food-display h1 {
-  font-size: max(2vw, 24px);
-  font-weight: 600;
+  font-size: max(2vw, 20px);
+  font-weight: 500;
 }
 
 .food-display-list {
