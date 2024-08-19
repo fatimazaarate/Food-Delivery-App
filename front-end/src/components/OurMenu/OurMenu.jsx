@@ -18,7 +18,7 @@ const OurMenu = ({ category, setCategory }) => {
               <div
                 onClick={() =>
                   setCategory((current) =>
-                    current === item.menu_name ? "something" : item.menu_name
+                    current === item.menu_name ? "menu" : item.menu_name
                   )
                 }
                 className="menu-item"

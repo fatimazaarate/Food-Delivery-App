@@ -5,7 +5,7 @@ import OurMenu from "../../components/OurMenu/OurMenu";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const home = () => {
-  const [category, setCategory] = useState("Something");
+  const [category, setCategory] = useState("menu");
   return (
     <div>
       <Header />
