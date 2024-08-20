@@ -1,0 +1,63 @@
+.footer-left .logo {
+  font-family: Ubuntu;
+  font-weight: 900;
+  font-size: 27px;
+  color: #da3c02;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  filter: brightness(0) invert(1); /* Inverts the color of my icons to white */
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #323232;
+  color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8vw;
+  padding-top: 80px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.footer-center li,
+.footer-right li {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer-center h2,
+.footer-right h2 {
+  color: white;
+  font-size: 22px;
+}
+
+.footer hr {
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background-color: gray;
+  border: none;
+}

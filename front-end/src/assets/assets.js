@@ -42,12 +42,20 @@ import drink_1 from "./Lemonade.jpg";
 import drink_2 from "./Iced Coffee.jpg";
 import drink_3 from "./Green Tea.avif";
 import drink_4 from "./Smoothie.webp";
+import facebook from "./facebook.png";
+import instagram from "./instagram.png";
+import whatsapp from "./whatsapp.png";
+import linkedin from "./linkedin.png";
 
 export const assets = {
   logo,
   search_icon,
   panier,
   ratingStars,
+  facebook,
+  instagram,
+  whatsapp,
+  linkedin,
 };
 
 export const menu_items = [
