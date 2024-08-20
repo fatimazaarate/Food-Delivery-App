@@ -12,7 +12,8 @@
   font-family: Ubuntu;
   font-weight: 900;
   font-size: 25px;
-  color: rgb(223, 71, 15);
+  color: #da3c02;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-menu {

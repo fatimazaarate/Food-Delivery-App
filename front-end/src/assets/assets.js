@@ -64,7 +64,7 @@ export const menu_items = [
     menu_img: pasta,
   },
   {
-    menu_name: "Grilled Dishes",
+    menu_name: "Barbecue",
     menu_img: grilled_dishes,
   },
   {
@@ -203,28 +203,28 @@ export const food_List = [
     name: "Grilled Chicken",
     image: grilled_1,
     price: 120 + " MAD",
-    category: "Grilled Dishes",
+    category: "Barbecue",
   },
   {
     id: 18,
     name: "Grilled Salmon",
     image: grilled_2,
     price: 170 + " MAD",
-    category: "Grilled Dishes",
+    category: "Barbecue",
   },
   {
     id: 19,
     name: "Grilled Steak",
     image: grilled_3,
     price: 190 + " MAD",
-    category: "Grilled Dishes",
+    category: "Barbecue",
   },
   {
     id: 20,
     name: "Grilled Vegetables",
     image: grilled_4,
     price: 100 + " MAD",
-    category: "Grilled Dishes",
+    category: "Barbecue",
   },
   {
     id: 21,
