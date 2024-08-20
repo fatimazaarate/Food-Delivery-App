@@ -1,6 +1,11 @@
 .platforms img {
   width: 50px;
   height: 50px;
+  transition: 0.5s;
+}
+
+.platforms img:hover {
+  transform: scale(1.15);
 }
 
 .app-download {

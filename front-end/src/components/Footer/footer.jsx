@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 
 const footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-left">
           <div className="logo">FoodyNow .</div>

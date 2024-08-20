@@ -5,7 +5,7 @@ import { menu_items } from "../../assets/assets";
 const OurMenu = ({ category, setCategory }) => {
   return (
     <div>
-      <div className="explore-our-menu">
+      <div className="explore-our-menu" id="our-menu">
         <h1>Explore Our Menu</h1>
         <p className="menu-description">
           Explore the diverse flavors at FoodyNow! Our menu offers everything
