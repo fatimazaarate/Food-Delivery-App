@@ -47,6 +47,7 @@ import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
 import playstore from "./playstore.png";
 import applestore from "./apple-store.png";
+import xbutton from "./x-button.png";
 
 export const assets = {
   logo,
@@ -58,6 +59,7 @@ export const assets = {
   linkedin,
   playstore,
   applestore,
+  xbutton,
 };
 
 export const menu_items = [
