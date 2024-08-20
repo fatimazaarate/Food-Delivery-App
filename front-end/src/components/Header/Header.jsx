@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+  const [menu, setMenu] = useState("home");
   return (
     <div className="Header">
       <div className="header-content">
@@ -12,7 +13,9 @@ const Header = () => {
           speaks to your taste and enjoy a delightful dining experience right at
           your doorstep.
         </p>
-        <button>View Menu</button>
+        <a href="#our-menu">
+          <button onClick={() => setMenu("menu")}>View Menu</button>
+        </a>
       </div>
     </div>
   );
