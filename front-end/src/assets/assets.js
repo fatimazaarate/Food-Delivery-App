@@ -44,8 +44,9 @@ import drink_3 from "./Green Tea.avif";
 import drink_4 from "./Smoothie.webp";
 import facebook from "./facebook.png";
 import instagram from "./instagram.png";
-import whatsapp from "./whatsapp.png";
 import linkedin from "./linkedin.png";
+import playstore from "./playstore.png";
+import applestore from "./apple-store.png";
 
 export const assets = {
   logo,
@@ -54,8 +55,9 @@ export const assets = {
   ratingStars,
   facebook,
   instagram,
-  whatsapp,
   linkedin,
+  playstore,
+  applestore,
 };
 
 export const menu_items = [

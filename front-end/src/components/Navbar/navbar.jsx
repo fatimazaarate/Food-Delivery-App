@@ -23,12 +23,14 @@ const navbar = () => {
         >
           Menu
         </li>
-        <li
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
-        >
-          Mobile-app
-        </li>
+        {
+          <li
+            onClick={() => setMenu("mobile-app")}
+            className={menu === "mobile-app" ? "active" : ""}
+          >
+            Mobile-app
+          </li>
+        }
         <li
           onClick={() => setMenu("contact")}
           className={menu === "contact" ? "active" : ""}

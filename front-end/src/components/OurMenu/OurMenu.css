@@ -22,8 +22,9 @@
 
 .menu-categories img {
   width: 7.5vw;
-  min-width: 90px;
+  min-width: 85px;
   height: 7.5vw;
+  min-height: 85px;
   border: 2px solid #757575;
   border-radius: 50%;
   object-fit: cover;

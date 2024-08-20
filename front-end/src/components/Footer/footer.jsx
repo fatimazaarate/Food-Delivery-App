@@ -17,7 +17,7 @@ const footer = () => {
             <img src={assets.facebook} alt="facebook icon" />
             <img src={assets.instagram} alt="instagram icon" />
             <img src={assets.linkedin} alt="linkedin icon" />
-            <img src={assets.whatsapp} alt="whatsapp icon" />
+            {/*<img src={assets.whatsapp} alt="whatsapp icon" />*/}
           </div>
         </div>
 

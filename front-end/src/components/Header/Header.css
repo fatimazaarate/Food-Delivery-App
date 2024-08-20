@@ -4,7 +4,7 @@
   background: url("./banner.jpeg") no-repeat center center;
   background-size: cover;
   position: relative;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
@@ -53,4 +53,23 @@
   padding: 1vw 2.3vw;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .header-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-content {
+    max-width: 55%;
+  }
+  .header-content p {
+    display: none;
+  }
+  .header-content button {
+    padding: 2vw 4vw;
+    margin-top: 8px;
+  }
 }
