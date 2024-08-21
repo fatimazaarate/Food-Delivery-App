@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
+import { storeContext } from "../../context/storeContext";
 
 const navbar = ({ setLogin, currentRoute }) => {
+  const { getTotalToPay } = useContext(storeContext);
+
   return (
     <div className="navbar">
       <Link to="/">
@@ -49,7 +52,7 @@ const navbar = ({ setLogin, currentRoute }) => {
               className="panier-img"
             />
           </Link>
-          <div className="dot"></div>
+          <div className={getTotalToPay() === 0 ? " " : "dot"}></div>
         </div>
 
         <button onClick={() => setLogin(true)}>Sign in</button>
