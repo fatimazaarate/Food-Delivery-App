@@ -1,47 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 
-const navbar = ({ setLogin }) => {
-  const [menu, setMenu] = useState("home");
-
+const navbar = ({ setLogin, currentRoute }) => {
   return (
     <div className="navbar">
-      {/* before using assets here, we imported the img in assets.jxs and exported it */}
-
       <Link to="/">
-        {" "}
-        <div className="logo">FoodyNow .</div>
+        <div className={`logo ${currentRoute === "/" ? "" : ""}`}>
+          FoodyNow .
+        </div>
       </Link>
       <ul className="navbar-menu">
-        <Link
-          to="/"
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
-        >
+        <Link to="/" className={currentRoute === "/" ? "active" : ""}>
           Home
         </Link>
         <a
           href="#our-menu"
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
+          className={currentRoute === "/menu" ? "active" : ""}
         >
           Menu
         </a>
 
         <a
           href="#app-download"
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
+          className={currentRoute === "/mobile-app" ? "active" : ""}
         >
           Mobile-app
         </a>
 
         <a
           href="#footer"
-          onClick={() => setMenu("contact")}
-          className={menu === "contact" ? "active" : ""}
+          className={currentRoute === "/contact" ? "active" : ""}
         >
           Contact us
         </a>
@@ -53,7 +43,6 @@ const navbar = ({ setLogin }) => {
 
         <div className="panier-icon">
           <Link to="/cart">
-            {" "}
             <img
               src={assets.panier}
               alt="add to cart panier"
