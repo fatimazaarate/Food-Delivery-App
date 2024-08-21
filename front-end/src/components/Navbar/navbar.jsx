@@ -10,7 +10,10 @@ const navbar = ({ setLogin }) => {
     <div className="navbar">
       {/* before using assets here, we imported the img in assets.jxs and exported it */}
 
-      <div className="logo">FoodyNow .</div>
+      <Link to="/">
+        {" "}
+        <div className="logo">FoodyNow .</div>
+      </Link>
       <ul className="navbar-menu">
         <Link
           to="/"
@@ -49,11 +52,14 @@ const navbar = ({ setLogin }) => {
         </div>
 
         <div className="panier-icon">
-          <img
-            src={assets.panier}
-            alt="add to cart panier"
-            className="panier-img"
-          />
+          <Link to="/cart">
+            {" "}
+            <img
+              src={assets.panier}
+              alt="add to cart panier"
+              className="panier-img"
+            />
+          </Link>
           <div className="dot"></div>
         </div>
 
