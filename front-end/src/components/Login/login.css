@@ -40,8 +40,9 @@
 }
 
 .login-input input {
-  outline: none;
   border: 1px solid #c9c9c9;
+  outline-color: #49557e;
+  outline-width: 1px;
   padding: 10px;
   border-radius: 4px;
 }

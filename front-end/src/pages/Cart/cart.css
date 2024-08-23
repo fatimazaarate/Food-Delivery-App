@@ -10,6 +10,10 @@
   font-size: max(1vw, 14px);
 }
 
+.cart-table-elements .item-quantity {
+  margin-left: 25px;
+}
+
 .cart-item-name {
   margin: 10px 0;
   color: black;

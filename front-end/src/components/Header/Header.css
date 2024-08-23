@@ -50,9 +50,18 @@
   font-weight: 500;
   border: none;
   background-color: white;
-  padding: 1vw 2.3vw;
+  padding: 1vw 2vw;
   border-radius: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-content button:hover {
+  background-color: white;
+  color: #233262;
+  padding: 1.1vw 2.1vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1050px) {

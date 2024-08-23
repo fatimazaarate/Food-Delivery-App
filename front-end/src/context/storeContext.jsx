@@ -34,6 +34,11 @@ const StoreContextProvider = (props) => {
     return totalToPay;
   };
 
+  // getDeliveryFee function to return the delicery fee based on the quantity of food
+  const getDeliveryFee = (cartItems) => {
+    return getTotalToPay() === 0 ? 0 : 20;
+  };
+
   const contextValue = {
     food_List,
     cartItems,
@@ -41,6 +46,7 @@ const StoreContextProvider = (props) => {
     addToCart,
     removeFromCart,
     getTotalToPay,
+    getDeliveryFee,
   };
   return (
     <storeContext.Provider value={contextValue}>

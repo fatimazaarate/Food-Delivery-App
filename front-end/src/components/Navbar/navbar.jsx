@@ -40,10 +40,6 @@ const navbar = ({ setLogin, currentRoute }) => {
         </a>
       </ul>
       <div className="navbar-right">
-        <div className="navbar-search-icon">
-          <img src={assets.search_icon} alt="search icon" />
-        </div>
-
         <div className="panier-icon">
           <Link to="/cart">
             <img

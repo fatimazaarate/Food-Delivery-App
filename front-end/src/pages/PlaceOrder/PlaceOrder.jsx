@@ -18,7 +18,21 @@ const PlaceOrder = () => {
           <input type="email" placeholder="Email address" />
         </div>
         <input type="text" placeholder="Delivery address" />
+        <div className="payment-method">
+          <select
+            required
+            defaultValue=""
+            onChange={(e) =>
+              (e.target.style.color = e.target.value ? "black" : "#757575")
+            }
+            style={{ color: "#757575" }}
+          >
+            <option value="">Choose your payment method:</option>
+            <option value="c-o-d">Cash On Delivery</option>
+          </select>
+        </div>
       </div>
+
       <div className="place-order-rightside">
         <div className="cart-total">
           <h2>Your Total</h2>
@@ -38,7 +52,7 @@ const PlaceOrder = () => {
               <b>{getTotalToPay() + getDeliveryFee(cartItems)} MAD</b>
             </div>
           </div>
-          <button>PROCEED TO PAYMENT</button>
+          <button>ORDER NOW</button>
         </div>
       </div>
     </form>
