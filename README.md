@@ -18,12 +18,12 @@ The Food Delivery App is a web application designed to provide users with a smoo
 ## Features
 
 - **Navigation Bar:** A responsive navigation bar for easy access to different pages.
-- **Pages:** Includes Home, Cart, Place Order, and Sign In/Sign Up pages.
+- **Pages:** Includes Home, Cart, Place Order.
 - **React Router Setup:** For seamless navigation between different components and pages.
 - **Website Header:** A styled header for branding and navigation.
 - **Menu Items:** Dynamic menu items with details and images.
 - **Food List Component:** Displays a list of available food items.
-- **Footer:** A footer with additional information and links.
+- **Footer:** A footer with additional informations.
 - **Add-to-Cart Component:** Allows users to add items to their cart.
 - **Responsive Design:** Ensures the application works well on various screen sizes.
 - **Authentication:** Sign In and Sign Up components for user management.
@@ -67,42 +67,73 @@ The project is organized as follows:
 ```
 food-delivery-app/
 │
-├── front-end/
-│ ├── public/
-│ │ └── header_img.png
-│ │
-│ ├── src/
-│ │ ├── assets/
-│ │ │ ├── icons8-add-to-cart-50.png
-│ │ │ ├── icons8-chercher.svg
-│ │ │ └── restaurant.png
-│ │ ├── components/
-│ │ │ ├── Header/
-│ │ │ │ └── Header.jsx
-│ │ │ └── Navbar/
+├──front-end
+│
+├── public/
+│ └── banner.jpeg
+| └── icons8-serve-64.png
+│
+├── src/
+│ ├── assets/
+│ │ ├── Burguers.jpg
+│ │ ├── Drinks.jpg
+│ │ ├── assets.js
+│ │ └──
+│ ├── components/
+│ │ ├── AppDownload/
+│ │ │ └── AppDownload.jsx
+│ │ │ └── AppDownload.css
+│ │ ├── FoodDisplay/
+│ │ │ └── FoodDisplay.jsx
+│ │ │ └── FoodDisplay.css
+│ │ ├── FoodItems/
+│ │ │ └── FoodItems.jsx
+│ │ │ └── FoodItems.css
+│ │ ├── Footer/
+│ │ │ └── Footer.jsx
+│ │ │ └── Footer.css
+│ │ ├── Header/
+│ │ │ └── Header.jsx
+│ │ │ └── Header.css
+│ │ ├── Login/
+│ │ │ └── Login.jsx
+│ │ │ └── Login.css
+│ │ ├── Navbar/
 │ │ │ └── Navbar.jsx
-│ │ ├── pages/
-│ │ │ ├── Cart/
-│ │ │ │ └── Cart.jsx
-│ │ │ ├── Home/
-│ │ │ │ └── Home.jsx
-│ │ │ ├── PlaceOrder/
-│ │ │ │ └── PlaceOrder.jsx
-│ │ │ └── SignIn/
-│ │ │ └── SignIn.jsx
-│ │ ├── App.jsx
-│ │ └── index.jsx
-│ │
-│ ├── .gitignore
-│ ├── package.json
-│ └── vite.config.js
+│ │ │ └── Navbar.css
+│ │ └── OurMenu/
+│ │ └── OurMenu.jsx
+│ │ └── OurMenu.css
+│ ├── context/
+│ │ └── storeContext.jsx
+│ ├── pages/
+│ │ ├── Cart/
+│ │ │ └── Cart.jsx
+│ │ │ └── Cart.css
+│ │ ├── Home/
+│ │ │ └── Home.jsx
+│ │ │ └── Home.css
+│ │ ├── PlaceOrder/
+│ │ │ └── PlaceOrder.jsx
+│ │ │ └── PlaceOrder.css
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+│
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── vite.config.js
 │
 └── back-end/ # For Backend Collaborators
 ```
 
 ## Usage
 
-- **Navigation Bar:** Contains links to Home, Cart, and other pages.
+- **Navigation Bar:** Contains links to Home, Menu, Cart, and Sign in/up.
 - **Pages:** Render content based on the route.
 - **Food List Component:** Shows all available food items.
 - **Footer:** Provides additional links and information.
