@@ -10,18 +10,17 @@ const PlaceOrder = () => {
       <div className="place-order-leftside">
         <p className="title">Delivery Informations</p>
         <div className="info-element-side-by-side">
-          <input type="text" placeholder="First name" />
-          <input type="text" placeholder="Last name" />
+          <input type="text" placeholder="First name" required />
+          <input type="text" placeholder="Last name" required />
         </div>
         <div className="info-element-side-by-side">
-          <input type="text" placeholder="Phone number" />
+          <input type="text" placeholder="Phone number" required />
           <input type="email" placeholder="Email address" />
         </div>
-        <input type="text" placeholder="Delivery address" />
+        <input type="text" placeholder="Delivery address" required />
         <div className="payment-method">
           <select
             required
-            defaultValue=""
             onChange={(e) =>
               (e.target.style.color = e.target.value ? "black" : "#757575")
             }

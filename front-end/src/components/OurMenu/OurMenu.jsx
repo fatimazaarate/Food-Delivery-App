@@ -16,6 +16,7 @@ const OurMenu = ({ category, setCategory }) => {
           {menu_items.map((item, index) => {
             return (
               <div
+                // onclick to filter and display the category of food i want
                 onClick={() =>
                   setCategory((current) =>
                     current === item.menu_name ? "menu" : item.menu_name
