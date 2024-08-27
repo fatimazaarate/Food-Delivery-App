@@ -10,6 +10,7 @@ const StoreContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     if (!cartItems[itemId]) {
+      // ...prev ensures that the existing items in the cart are preserved, while [itemId]: 1 adds the new item to the cart with a quantity of 1.
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     } else {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
