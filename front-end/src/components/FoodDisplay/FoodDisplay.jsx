@@ -4,6 +4,7 @@ import { storeContext } from "../../context/storeContext";
 import FoodItems from "../FoodItems/FoodItems";
 
 const FoodDisplay = ({ category }) => {
+  // Consuming Context with useContext Hook
   const { food_List } = useContext(storeContext);
   return (
     <div className="food-display">

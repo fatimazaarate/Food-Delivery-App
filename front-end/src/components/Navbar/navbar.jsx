@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { storeContext } from "../../context/storeContext";
 
 const navbar = ({ setLogin, currentRoute }) => {
+  // Consuming Context with useContext Hook
   const { getTotalToPay } = useContext(storeContext);
 
   return (

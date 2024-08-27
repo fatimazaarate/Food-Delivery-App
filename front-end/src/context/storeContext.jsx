@@ -1,8 +1,10 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { food_List } from "../assets/assets";
 
+// Create a Context
 export const storeContext = createContext(null);
 
+// Provide the context value with useState Hook
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
 
@@ -18,6 +20,7 @@ const StoreContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  // getTotalToPay function calculate the total of orders of the user
   const getTotalToPay = () => {
     let totalToPay = 0;
     for (const item in cartItems) {
@@ -34,7 +37,7 @@ const StoreContextProvider = (props) => {
     return totalToPay;
   };
 
-  // getDeliveryFee function to return the delicery fee based on the quantity of food
+  // getDeliveryFee function to return the delivery fee based on the quantity of food
   const getDeliveryFee = (cartItems) => {
     return getTotalToPay() === 0 ? 0 : 20;
   };

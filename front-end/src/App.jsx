@@ -1,5 +1,5 @@
 // install extension es7 react...
-// rafce to write the model of app.jsx
+// rafce to write the model of a .jsx file
 
 import React, { useState } from "react";
 import Navbar from "./components/Navbar/navbar";
@@ -20,6 +20,7 @@ const App = () => {
       {login ? <Login setLogin={setLogin} /> : <></>}
       <div className="app">
         <Navbar setLogin={setLogin} currentRoute={location.pathname} />
+        {/**using the Routes and Route components from React Router to allow the user to navigate between different pages (Home, Cart, PlaceOrder) without reloading the page, ensuring smooth transitions.*/}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
